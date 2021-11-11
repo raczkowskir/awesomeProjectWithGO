@@ -9,12 +9,20 @@ func functionWhichReturnNothing() {
 	fmt.Println("Lets see what happen.")
 }
 
+func functionWhichReturnMultipleValues() (int, int) {
+	var myFirstInt int = 0
+	mySecondInt := 10
+	//mySecondInt int = 10
+
+	return myFirstInt, mySecondInt
+}
+
 func main() {
 	fmt.Println("//////////// The basel line")
 
 	functionWhichReturnNothing()
-
-	fmt.Println("///////////// The last line")
+	print(functionWhichReturnMultipleValues())
+	//fmt.Println("///////////// The last line")
 }
 
 //func someShit() {
